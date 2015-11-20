@@ -3,6 +3,7 @@ $(document).ready(function() {
 	$('#ryu-ready').hide();
 	$('#ryu-cool').hide();
 	$('#ryu-throw').hide();
+	$('.hadouken-container').hide();
 
 	$('.ryu-container').mouseenter(function(){
 		$('#ryu-still').hide();
@@ -23,6 +24,7 @@ $(document).ready(function() {
 			$('#ryu-still').hide();
 			$('#ryu-ready').hide();
 			$('#ryu-cool').show();
+			$('#hadouken-sound')
 		}
 
 	});
@@ -40,12 +42,23 @@ $(document).ready(function() {
 		$('#ryu-ready').hide();
 		$('#ryu-cool').hide();
 		$('#ryu-throw').show();
+		$('.hadouken-container').show();
+		$('#hadouken').animate({
+			marginLeft: "100%",
+			opacity:0
+		},1500);
+		document.getElementById('hadouken-sound').play()
 	});
 	$('.ryu-container').mouseup(function(){
 		$('#ryu-still').show();
 		$('#ryu-ready').hide();
 		$('#ryu-cool').hide();
 		$('#ryu-throw').hide();
+		$('.hadouken-container').hide();
+		$('#hadouken').animate({
+			marginLeft:"0%",
+			opacity:100
+		},2);
 	});
 
 });

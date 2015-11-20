@@ -36,19 +36,17 @@ body{
 	background-color: white;
 	margin: 10em auto;
 	position: relative;
+	min-height: 31.125em;
 
 }
-
-
-
 
 .ryu-container{
 float: left;
 width: 50%;
-margin:0;
-position:absolute;
+margin:auto 0;
+position:relative;
 z-index: 10;
-background-color: red;
+/*background-color: red;*/
 }
 
 #ryu-still,
@@ -56,28 +54,31 @@ background-color: red;
 #ryu-cool,
 #ryu-throw{
 	height: 100%;
+	right:0em;
 }
-
 
 .hadouken-container{
 position: absolute;
-left: 50%;
-top:50%;
-width:55%;
-float:right;
-z-index: 10;
-background-color: yellow;
+left: 65%;
+top:35%;
+width:135%;
+z-index: 0;
+/*background-color: yellow;*/
+}
+#hadouken{
+	/*background-color: purple;*/
+	margin-left: 0%;
 }
 
 .info-container{
 	width:50%;
 	float: right;
-	margin: 5em 0;
+	max-height: 31.125em;
+	min-height: 31.125em;
+	margin: 0;
 	position:relative;
-	z-index: 1;
-	background-color: blue;
-
-
+	z-index: 0;
+	/*background-color: blue;*/
 }
 
 .info-container p{
@@ -88,6 +89,8 @@ background-color: yellow;
 }
 
 #first-info-paragraph{
+	margin-top: 2em;
+	width: 50%;
 }
 
 #second-info-paragraph{
