@@ -1,0 +1,112 @@
+/* CSS reset 
+	(all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+
+
+/* General styles 
+	(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+body{
+	background-color: black;
+/*	font-family: 'Knewave', cursive;
+	font-family: 'Kaushan Script', cursive;*/
+}
+
+/* Header styles 
+	(all the styles inside the < header > or < nav > tags) 
+*/
+
+
+/* Content styles 
+	(all the styles inside the < sections > or < aside > tags)
+*/
+
+
+
+
+.viewer{
+	background-color: white;
+	margin: 10em auto;
+	position: relative;
+	min-height: 31.125em;
+
+}
+
+.ryu-container{
+float: left;
+width: 50%;
+margin:auto 0;
+position:relative;
+z-index: 10;
+/*background-color: red;*/
+}
+
+#ryu-still,
+#ryu-ready,
+#ryu-cool,
+#ryu-throw{
+	height: 100%;
+	right:0em;
+}
+
+.hadouken-container{
+position: absolute;
+left: 65%;
+top:35%;
+width:135%;
+z-index: 0;
+/*background-color: yellow;*/
+}
+#hadouken{
+	/*background-color: purple;*/
+	margin-left: 0%;
+}
+
+.info-container{
+	width:50%;
+	float: right;
+	max-height: 31.125em;
+	min-height: 31.125em;
+	margin: 0;
+	position:relative;
+	z-index: 0;
+	/*background-color: blue;*/
+}
+
+.info-container p{
+	color: black;
+	font-family: 'Permanent Marker', cursive;	
+	font-size: 2.1em;
+	width:55%;
+}
+
+#first-info-paragraph{
+	margin-top: 2em;
+	width: 50%;
+}
+
+#second-info-paragraph{
+	float: right;
+}
+
+
+
+.first-paragraph{
+
+}
+/* Footer styles 
+	(all the styles inside the < footer > tag)
+*/
+
+
+/* Responsive styles 
+	(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+*/
